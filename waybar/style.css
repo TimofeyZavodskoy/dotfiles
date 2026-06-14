@@ -1,0 +1,103 @@
+/* =============================================================================
+ * OXOCARBON WAYBAR STYLES
+ * ============================================================================= */
+
+* {
+    font-family: "JetBrains Mono", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: #161616; /* base00 */
+    color: #dde1e6;            /* base04 */
+    border-bottom: 2px solid #262626;
+}
+
+/* Модули общие настройки */
+#workspaces,
+#window,
+#clock,
+#language,
+#custom-language,
+#cpu,
+#memory,
+#battery,
+#tray {
+    padding: 0 12px;
+    background-color: #262626; /* base01 */
+    margin: 4px 2px;
+    border-radius: 6px;
+}
+
+/* Воркспейсы */
+#workspaces button {
+    padding: 0 6px;
+    color: #dde1e6;
+}
+
+#workspaces button.active {
+    color: #ff7eb6; /* Розовый акцент base0C */
+    border-bottom: 2px solid #ff7eb6;
+}
+
+#workspaces button.urgent {
+    color: #ee5396;
+    background-color: #393939;
+}
+
+/* Имя активного окна */
+#window {
+    background-color: transparent;
+    color: #78a9ff; /* Синий акцент base09 */
+}
+
+/* Часы по центру */
+#clock {
+    background-color: #393939; /* base02 */
+    color: #08bdba;            /* Бирюзовый base07 */
+}
+
+/* Язык, ресурсы и батарея */
+#language {
+    color: #ff7eb6;
+}
+
+#custom-language {
+    color: #ff7eb6;
+}
+
+#cpu {
+    color: #78a9ff;
+}
+
+#memory {
+    color: #3ddbd9;
+}
+
+#battery {
+    color: #42be65;
+}
+
+#battery.charging, #battery.plugged {
+    color: #82cfff;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #ee5396;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #161616;
+        color: #ee5396;
+    }
+}
