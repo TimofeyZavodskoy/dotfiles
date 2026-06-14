@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Сюда впиши свой ник на GitHub и название репозитория с дотфайлами
-GITHUB_USER="твой_ник_на_github"
+GITHUB_USER="TimofeyZavodskoy"
 REPO_NAME="dotfiles"
 
 # Ссылка для скачивания «сырых» файлов списков пакетов
