@@ -1,0 +1,14 @@
+asusctl
+ayugram-desktop
+awww
+cbonsai
+clight
+clightd
+fnm-bin
+heroic-games-launcher-bin
+jetbrains-toolbox
+prizrak-box-bin
+rog-control-center
+supergfxctl
+sklauncher-bin
+visual-studio-code-bin
